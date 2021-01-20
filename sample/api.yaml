@@ -1,0 +1,24 @@
+openapi: 3.0.1
+info:
+  title: Sample API
+  description: Sample API
+  version: "0.1"
+servers:
+- url: http://localhost:8080
+  description: Generated server url
+paths:
+  /test:
+    get:
+      tags:
+      - test-controller
+      operationId: test
+      responses:
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: integer
+                format: int64
+                exampleSetFlag: false
+components: {}
